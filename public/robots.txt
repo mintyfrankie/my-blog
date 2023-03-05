@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: yunan.io/sitemap.xml
+Sitemap: mintyfrankie.github.io/sitemap.xml

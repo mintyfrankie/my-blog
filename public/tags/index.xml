@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on @yunan.wang</title>
-    <link>yunan.io/tags/</link>
+    <link>mintyfrankie.github.io/tags/</link>
     <description>Recent content in Tags on @yunan.wang</description>
     <image>
       <title>@yunan.wang</title>
-      <url>yunan.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>yunan.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>mintyfrankie.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>mintyfrankie.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="yunan.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="mintyfrankie.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
