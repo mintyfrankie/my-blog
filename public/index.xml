@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>@yunan.wang</title>
-    <link>mintyfrankie.github.io/</link>
+    <link>http://yunan.io/</link>
     <description>Recent content on @yunan.wang</description>
     <image>
       <title>@yunan.wang</title>
-      <url>mintyfrankie.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>mintyfrankie.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://yunan.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://yunan.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="mintyfrankie.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator><atom:link href="http://yunan.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About me</title>
-      <link>mintyfrankie.github.io/about/</link>
+      <link>http://yunan.io/about/</link>
       <pubDate>Sun, 05 Mar 2023 00:00:00 +0000</pubDate>
       
-      <guid>mintyfrankie.github.io/about/</guid>
+      <guid>http://yunan.io/about/</guid>
       <description></description>
     </item>
     
