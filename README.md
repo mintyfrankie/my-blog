@@ -6,3 +6,5 @@ My personal blog site powered by [Hugo](https://gohugo.io/) and hosted by my clo
 
 - Design a unique favicon
 - Find ways to not show author: I mean, it's always me, right?
+- Fix syntax highlighting issue
+- Experiment with new typeset

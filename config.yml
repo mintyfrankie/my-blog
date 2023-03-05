@@ -74,9 +74,9 @@ params:
     - name: email
       url: "mailto:contact@yunan.io"
     - name: linkedin
-      url: "https://linkedin.com/yunanwg"
+      url: "https://www.linkedin.com/in/yunanwg/"
     - name: github
-      url: "https://githun.com/mintyfrankie"
+      url: "https://github.com/mintyfrankie"
 
   cover:
     hidden: true
