@@ -93,7 +93,15 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 
 menu:
-
+  main:
+    - identifier: about
+      name: About
+      url: "/about/"
+      weight: 10  
+    - identifier: blog
+      name: Blog
+      url: "/posts/"
+      weight: 20
 
 pygmentsUseClasses: true
 markup:
