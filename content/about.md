@@ -1,13 +1,12 @@
 ---
 title: "About me"
 date: 2023-03-05
-description: "a new version of my presence."
+description: "*a brand new version of my online presence.*"
 author: "Me"
 showToc: false
 searchHidden: true
 ---
 
----
 Hi, stranger. A genuine welcome to this Internet shelter.
 
 
