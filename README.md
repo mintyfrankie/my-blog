@@ -5,4 +5,4 @@ My personal blog site powered by [Hugo](https://gohugo.io/) and hosted by my clo
 ## To-do List
 
 - Design a unique favicon
-- Complete about page and expose it on Home Page
+- Find ways to not show author: I mean, it's always me, right?
