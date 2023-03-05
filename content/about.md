@@ -4,6 +4,7 @@ date: 2023-03-05
 description: "*a brand new version of my online presence.*"
 author: "Me"
 showToc: false
+TocOpen: false
 searchHidden: true
 ---
 
