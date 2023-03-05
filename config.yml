@@ -105,7 +105,7 @@ menu:
   main:
     - identifier: about
       name: About
-      url: /about.md
+      url: /about/
       weight: 10
     - identifier: posts
       name: Posts
