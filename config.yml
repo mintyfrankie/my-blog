@@ -24,7 +24,7 @@ params:
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
-  disableThemeToggle: false
+  disableThemeToggle: true
 
   ShowReadingTime: false
   ShowShareButtons: false
@@ -52,7 +52,7 @@ params:
     safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "Home"
+    text: "Yunan's Home"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
@@ -97,15 +97,7 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 
 menu:
-  main:
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 10
-    - identifier: posts
-      name: Posts
-      url: /posts
-      weight: 20
+
 
 pygmentsUseClasses: true
 markup:
