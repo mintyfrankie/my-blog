@@ -1,5 +1,7 @@
 # @yunan.io
 
+[![Deploy Hugo site to Github Pages](https://github.com/mintyfrankie/my-blog/actions/workflows/github-page.yml/badge.svg)](https://github.com/mintyfrankie/my-blog/actions/workflows/github-page.yml)
+
 My personal blog site powered by [Hugo](https://gohugo.io/) and hosted by my cloud server. Forked from the theme [PaperMod](https://github.com/adityatelange/hugo-PaperMod).
 
 ## To-do List
