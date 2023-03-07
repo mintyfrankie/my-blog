@@ -1,4 +1,4 @@
-name: Hugo CI & Deploy
+name: Deploy Hugo to Cloud Server
 
 on:
     push:
