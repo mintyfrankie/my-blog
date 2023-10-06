@@ -12,7 +12,7 @@
   "dependencies": {
     "@astrojs/mdx": "^1.1.1",
     "@astrojs/tailwind": "^5.0.1",
-    "@fontsource/twinkle-star": "^5.0.14",
+    "@fontsource/merriweather": "^5.0.8",
     "@types/canvas-confetti": "^1.6.0",
     "astro": "^3.2.3",
     "autoprefixer": "^10.4.15",
