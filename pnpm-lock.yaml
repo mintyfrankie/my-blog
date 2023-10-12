@@ -11,6 +11,9 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.0.1
     version: 5.0.1(astro@3.2.3)(tailwindcss@3.3.3)
+  '@fontsource-variable/roboto-mono':
+    specifier: ^5.0.14
+    version: 5.0.14
   '@fontsource/merriweather':
     specifier: ^5.0.8
     version: 5.0.8
@@ -765,6 +768,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource-variable/roboto-mono@5.0.14:
+    resolution: {integrity: sha512-PegRC4zlmlh6AKOgEGpXR8ZsKVKzgOjBoK9QFkKZaJu6rc74juIspXwceMRlwtgrF02eDKdFEbxqrhyFXjrbdg==}
+    dev: false
 
   /@fontsource/merriweather@5.0.8:
     resolution: {integrity: sha512-4vvR6psdKcGzaFCQL8fGCqMI/mOLKD+mhmUe3iQilx/4VFkIcF7wswWHZ7KCPeF24edX8yd0QXX0DQ1CenMrYA==}

@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Font */
+html {
+  font-family: 'merriweather', sans-serif;
+}

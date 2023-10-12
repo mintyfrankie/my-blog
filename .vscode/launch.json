@@ -1,15 +1,18 @@
+// Astro
 {
   "version": "0.2.0",
   "configurations": [
     {
-      "type": "node",
+      "command": "pnpm dev",
+      "name": "Development server",
       "request": "launch",
-      "name": "Astro: Launch",
-      "runtimeExecutable": "pnpm",
-      "runtimeArgs": ["run", "dev"],
-      "port": 3000,
-      "protocol": "http",
-      "cwd": "${workspaceFolder}"
+      "type": "node-terminal"
+    },
+    {
+      "command": "pnpm build",
+      "name": "Build",
+      "request": "launch",
+      "type": "node-terminal"
     }
   ]
 }
