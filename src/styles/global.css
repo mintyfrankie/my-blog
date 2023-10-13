@@ -10,6 +10,7 @@
   }
 }
 
+/* Global Styles */
 h1 {
   @apply text-accent-900 font-bold;
 }
