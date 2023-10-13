@@ -1,28 +1,26 @@
-import { defineConfig } from 'astro/config'
-import tailwind from '@astrojs/tailwind'
-import mdx from '@astrojs/mdx'
-import remarkToc from 'remark-toc'
+import { defineConfig } from 'astro/config';
+import tailwind from '@astrojs/tailwind';
+import mdx from '@astrojs/mdx';
+import remarkToc from 'remark-toc';
+import vercel from '@astrojs/vercel/serverless';
 
-import vercel from '@astrojs/vercel/serverless'
+import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    tailwind({
-      applyBaseStyles: false,
-    }),
-    mdx(),
-  ],
+  integrations: [tailwind({
+    applyBaseStyles: false
+  }), mdx(), sitemap()],
   markdown: {
-    remarkPlugins: [remarkToc],
+    remarkPlugins: [remarkToc]
   },
   output: 'server',
   adapter: vercel({
     webAnalytics: {
-      enabled: true,
+      enabled: true
     },
     speedInsights: {
-      enabled: true,
-    },
-  }),
-})
+      enabled: true
+    }
+  })
+});
