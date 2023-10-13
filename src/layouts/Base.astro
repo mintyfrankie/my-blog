@@ -1,0 +1,23 @@
+---
+import '@fontsource-variable/roboto-mono'
+import '../styles/global.css'
+import { ViewTransitions } from 'astro:transitions'
+
+import NavBar from '@components/NavBar.astro'
+
+const { title } = Astro.props
+---
+
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body class='mx-8 md:mx-24'>
+    <NavBar />
+    <slot />
+  </body>
+</html>
