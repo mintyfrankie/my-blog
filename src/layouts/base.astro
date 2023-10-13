@@ -1,8 +1,9 @@
 ---
 import '@fontsource-variable/roboto-mono'
 import '../styles/global.css'
-
 import { ViewTransitions } from 'astro:transitions'
+
+import NavBar from '../components/NavBar.astro'
 
 const { title } = Astro.props
 ---
@@ -16,6 +17,7 @@ const { title } = Astro.props
     <ViewTransitions />
   </head>
   <body class='mx-8 md:mx-24'>
+    <NavBar />
     <slot />
   </body>
 </html>
