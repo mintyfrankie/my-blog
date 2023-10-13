@@ -9,3 +9,15 @@
     background-color: #f7fafc;
   }
 }
+
+h1 {
+  @apply text-accent-900 font-bold;
+}
+
+h2 {
+  @apply text-accent-800 font-semibold;
+}
+
+body {
+  @apply text-accent-700;
+}
