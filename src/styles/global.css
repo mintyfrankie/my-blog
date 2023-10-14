@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Global Font */
+/* global font */
 @layer base {
   html {
     font-family: 'Roboto Mono Variable', system-ui, sans-serif;
@@ -10,7 +10,7 @@
   }
 }
 
-/* Global Styles */
+/* global styles */
 h1 {
   @apply text-accent-900 font-bold text-xl;
   @apply my-10;
@@ -40,3 +40,5 @@ blockquote {
 body {
   @apply text-accent-700;
 }
+
+/* element specific styles */
