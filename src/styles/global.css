@@ -12,11 +12,29 @@
 
 /* Global Styles */
 h1 {
-  @apply text-accent-900 font-bold;
+  @apply text-accent-900 font-bold text-xl;
+  @apply my-10;
 }
 
 h2 {
-  @apply text-accent-800 font-semibold;
+  @apply text-accent-800 font-semibold text-xl underline;
+  @apply my-10;
+}
+
+h3 {
+  @apply text-accent-800 font-semibold underline;
+  @apply my-10;
+}
+
+p {
+  @apply text-accent-700;
+  @apply my-5;
+}
+
+blockquote {
+  @apply mx-3 pl-3 py-0.5;
+  @apply border-l-2;
+  @apply bg-accent-100;
 }
 
 body {
