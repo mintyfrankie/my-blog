@@ -14,7 +14,13 @@ export default defineConfig({
     mdx(),
     sitemap(),
   ],
-  markdown: {},
+  markdown: {
+    shikiConfig: {
+      theme: 'min-light',
+      langs: [],
+      wrap: true,
+    },
+  },
   output: 'server',
   adapter: vercel({
     webAnalytics: {
