@@ -31,17 +31,21 @@ p {
   @apply my-5;
 }
 
+body {
+  @apply text-accent-700;
+}
+
+/* element specific styles */
+a {
+  @apply text-accent-700 underline;
+}
+
 blockquote {
   @apply py-3 px-5;
   @apply border-l-2 rounded-md border-accent-200;
   @apply bg-accent-100;
 }
 
-body {
-  @apply text-accent-700;
-}
-
-/* element specific styles */
 pre {
   @apply py-3 px-5;
   @apply border-accent-200 border-2 rounded-md;
