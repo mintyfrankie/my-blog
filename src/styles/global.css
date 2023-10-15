@@ -12,32 +12,51 @@
 
 /* global styles */
 h1 {
-  @apply text-accent-900 font-bold text-xl;
+  @apply text-accent-700 font-bold text-xl;
   @apply my-10;
 }
 
 h2 {
-  @apply text-accent-800 font-semibold text-xl underline;
-  @apply my-10;
+  @apply text-accent-700 font-semibold text-xl;
+  @apply my-5;
+}
+
+h2::before {
+  content: '>>';
+  @apply mr-2;
 }
 
 h3 {
-  @apply text-accent-800 font-semibold underline;
-  @apply my-10;
+  @apply text-accent-700 font-semibold text-xl;
+  @apply my-5;
+}
+
+h3::before {
+  content: '>>>';
+  @apply mr-2;
 }
 
 p {
-  @apply text-accent-700;
+  @apply text-accent-900;
   @apply my-5;
 }
 
 body {
-  @apply text-accent-700;
+  @apply text-accent-900;
 }
 
 /* element specific styles */
 a {
   @apply text-accent-700 underline;
+}
+
+a:hover {
+  @apply bg-accent-200;
+}
+
+li::before {
+  content: '•';
+  @apply mr-2;
 }
 
 blockquote {

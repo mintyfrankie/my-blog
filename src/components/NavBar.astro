@@ -12,9 +12,15 @@
 <style>
   .on-hover {
     @apply p-0.5;
+    @apply no-underline;
   }
 
   .on-hover:hover {
     @apply bg-accent-200;
+  }
+
+  li::before {
+    content: '';
+    @apply mr-0;
   }
 </style>
