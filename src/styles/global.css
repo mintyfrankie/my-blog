@@ -54,8 +54,13 @@ a:hover {
   @apply bg-accent-200;
 }
 
-li::before {
+ul li::before {
   content: '•';
+  @apply mr-2;
+}
+
+ol li p::before {
+  content: counter(list-item) '.';
   @apply mr-2;
 }
 
