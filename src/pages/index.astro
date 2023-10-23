@@ -15,8 +15,12 @@ const posts = await getCollection('blog', ({ data }) => {
         posts.map((post) => (
           <li class='before:content-none my-10'>
             <h2 class='before:content-none'>
-              <a class="no-underline", href={`/posts/${post.slug}`}>{post.data.title}</a>
+              <a class="no-underline", href={`/posts/${post.slug}`}>{post.data.title}</a> 
             </h2>
+            
+            <time class="italic text-accent-600">{new Date(post.data.date).toISOString().split('T')[0]}</time>
+
+            <br>
             <span> {post.data.description}</span>
           </li>
         ))
