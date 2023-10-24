@@ -18,7 +18,7 @@ const { entry } = Astro.props
 const { Content } = await entry.render()
 ---
 
-<Base title=`${config.siteTitle} | ${entry.data.title}`>
+<Base title={`${config.siteTitle} | ${entry.data.title}`}>
   <h1>{entry.data.title}</h1>
   <div class='italic text-accent-600 my-2'>
     <time>{new Date(entry.data.date).toISOString().split('T')[0]}</time>
