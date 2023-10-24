@@ -11,3 +11,9 @@ export function useTranslations(lang: keyof typeof ui) {
     return ui[lang][key] || ui[defaultLang][key]
   }
 }
+
+export function switchLangByUrl(url: URL, lang: keyof typeof ui) {
+  const pathname = url.pathname
+  const rest = pathname.slice(4)
+  return `/${lang}/${rest}`
+}

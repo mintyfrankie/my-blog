@@ -1,0 +1,20 @@
+---
+import { languages } from '@i18n/ui'
+import { switchLangByUrl } from '@i18n/utils'
+
+const { parentURL } = Astro.props
+---
+
+<ul class='flex space-x-3'>
+  {
+    Object.entries(languages).map(([lang, label]) => (
+      <li class='before:content-none'>
+        <a
+          class='no-underline hover:bg-accent-300'
+          href={switchLangByUrl(parentURL, lang)}>
+          {label}
+        </a>
+      </li>
+    ))
+  }
+</ul>
