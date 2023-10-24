@@ -2,26 +2,28 @@
 import { getCollection } from 'astro:content'
 import Base from '@layouts/Base.astro'
 
+import { config } from 'site.config'
+
 const posts = await getCollection('blog', ({ data }) => {
   return data.isDraft !== true
 })
 ---
 
-<Base title='Home'>
+<Base title=`${config.siteTitle}`>
   <section>
     <br />
     <ul>
       {
-        posts.map((post) => (
+        posts.map((entry) => (
           <li class='before:content-none my-10'>
             <h2 class='before:content-none'>
-              <a class="no-underline", href={`/posts/${post.slug}`}>{post.data.title}</a> 
+              <a class="no-underline", href={`/posts/${entry.slug}`}>{entry.data.title}</a> 
             </h2>
             
-            <time class="italic text-accent-600">{new Date(post.data.date).toISOString().split('T')[0]}</time>
+            <time class="italic text-accent-600">{new Date(entry.data.date).toISOString().split('T')[0]}</time>
 
             <br>
-            <span> {post.data.description}</span>
+            <span> {entry.data.description}</span>
           </li>
         ))
       }
