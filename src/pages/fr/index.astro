@@ -5,7 +5,7 @@ import Base from '@layouts/base.astro'
 import { config } from 'site.config'
 import { getLangFromUrl } from '@i18n/utils'
 
-const indexLanguage = getLangFromUrl(Astro.url)
+const lang = getLangFromUrl(Astro.url)
 const posts = await getCollection('blog', ({ data }) => {
   return data.isDraft !== true
 })
@@ -18,10 +18,10 @@ const posts = await getCollection('blog', ({ data }) => {
     <br />
     <ul>
       {
-        posts.filter((entry) => entry.data.lang == indexLanguage).map((entry) => (
+        posts.filter((entry) => entry.data.lang == lang).map((entry) => (
           <li class='before:content-none my-10'>
             <h2 class='before:content-none'>
-              <a class="no-underline", href={`/posts/${entry.slug}`}>{entry.data.title}</a> 
+              <a class="no-underline", href={`/${lang}/posts/${entry.slug.split("/")[1]}`}>{entry.data.title}</a> 
             </h2>
             
             <time class="italic text-accent-600">{new Date(entry.data.date).toISOString().split('T')[0]}</time>

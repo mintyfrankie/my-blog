@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content'
+import Base from '@layouts/base.astro'
+import { config } from 'site.config'
+import TranslatedBanner from '@components/TranslatedBanner.astro'
+
+export async function getStaticPaths() {
+  const pages = await getCollection('blog')
+
+  const paths = pages.map((page) => {
+    const [lang, ...slug] = page.slug.split('/')
+    return { params: { lang, slug: slug.join('/') || undefined }, props: page }
+  })
+
+  return paths
+}
+
+const { lang, slug } = Astro.params
+const page = Astro.props
+const { Content } = await page.render()
+---
+
+<Base title={`${config.siteTitle} | ${page.data.title}`}>
+  <h1>{page.data.title}</h1>
+  <div class='flex items-center space-x-3'>
+    <div class='italic text-accent-600 my-2'>
+      <time>{new Date(page.data.date).toISOString().split('T')[0]}</time>
+    </div>
+    {page.data.isTranslated && <TranslatedBanner />}
+  </div>
+  <Content />
+</Base>
