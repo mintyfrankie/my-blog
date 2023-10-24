@@ -6,6 +6,7 @@ const blogCollection = defineCollection({
     title: z.string(),
     description: z.string(),
     isDraft: z.boolean().default(false),
+    isTranslated: z.boolean().default(false),
     lang: z.enum(['en', 'fr', 'zh']),
     tags: z.array(z.string()).optional(),
     image: z.string().optional(),

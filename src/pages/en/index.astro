@@ -1,0 +1,36 @@
+---
+import { getCollection } from 'astro:content'
+import Base from '@layouts/base.astro'
+
+import { config } from 'site.config'
+import { getLangFromUrl } from '@i18n/utils'
+
+const indexLanguage = getLangFromUrl(Astro.url)
+const posts = await getCollection('blog', ({ data }) => {
+  return data.isDraft !== true
+})
+
+
+---
+
+<Base title={config.siteTitle}>
+  <section>
+    <br />
+    <ul>
+      {
+        posts.filter((entry) => entry.data.lang == indexLanguage).map((entry) => (
+          <li class='before:content-none my-10'>
+            <h2 class='before:content-none'>
+              <a class="no-underline", href={`/posts/${entry.slug}`}>{entry.data.title}</a> 
+            </h2>
+            
+            <time class="italic text-accent-600">{new Date(entry.data.date).toISOString().split('T')[0]}</time>
+
+            <br>
+            <span> {entry.data.description}</span>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</Base>
