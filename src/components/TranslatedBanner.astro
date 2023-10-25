@@ -1,3 +1,10 @@
+---
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
 <div class='bg-accent-200 p-3 text-center'>
-  <span> Experimental: this article is translated by AI.</span>
+  <span>{t('TranslatedBanner')}</span>
 </div>

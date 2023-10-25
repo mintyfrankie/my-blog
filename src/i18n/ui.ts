@@ -8,16 +8,12 @@ export const defaultLang = 'en'
 
 export const ui = {
   en: {
-    'nav.home': 'Home',
-    'nav.about': 'About',
-    'nav.twitter': 'Twitter',
+    TranslatedBanner: 'Experimental: this article is translated by AI.',
   },
   fr: {
-    'nav.home': 'Accueil',
-    'nav.about': 'À propos',
+    TranslatedBanner: "Expérimental : cet article est traduit par l'IA.",
   },
   zh: {
-    'nav.home': '首页',
-    'nav.about': '关于',
+    TranslatedBanner: '测试：本文经由 AI 翻译。',
   },
 } as const
