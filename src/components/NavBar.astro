@@ -5,6 +5,14 @@ const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
 
+<link
+  rel='stylesheet'
+  href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'
+  integrity='sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=='
+  crossorigin='anonymous'
+  referrerpolicy='no-referrer'
+/>
+
 <nav
   class='flex flex-col items-center space-y-4 md:space-y-0 md:flex-row md:justify-between my-8 mb-4 pb-2 border-b-2 border-accent-600'>
   <a class='text-xl font-black on-hover' href=`/${lang}`>{t('title')}</a>
