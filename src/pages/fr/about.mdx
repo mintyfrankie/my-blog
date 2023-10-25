@@ -1,15 +1,19 @@
 ---
 layout: '@layouts/Base.astro'
-title: 'About'
+title: 'A propos'
 ---
 
-# About Me
+import TranslatedBanner from '@components/TranslatedBanner.astro'
 
-Hi, stranger. A genuine welcome to this Internet shelter.
+<TranslatedBanner />
 
-## The human
+# A Propos
 
-Below you may find a mechanical version of me:
+Salut, étranger. Bienvenue sincère dans cet abri sur Internet.
+
+## L'être humain
+
+Ci-dessous, vous trouverez une version mécanique de moi :
 
 ```python
 class thisHuman():
@@ -17,8 +21,7 @@ class thisHuman():
         self.name = 'Yunan Wang'
         self.location = 'Paris, France'
         self.occupation = 'master student'
-        self.organisation = 'Université Paris 1 Panthéon Sorbonne'
-        self.field = 'Development Studies'
+        self.field = 'Sustainability'
         self.languages = {
             '普通话': 'native',
             'English': 'professional',
@@ -28,36 +31,36 @@ class thisHuman():
         }
 ```
 
-However, I prefer a more "organic" interpretation of me, even though it is simplistic to summarise an individuals by a set of tags or adjectives.
+Cependant, je préfère une interprétation plus "organique" de moi, même si c'est simpliste de résumer un individu par un ensemble de tags ou d'adjectifs.
 
-The self introduction you might first see on the home page is somewhat a way of generalisation that I prefer:
+L'auto-introduction que vous pourriez d'abord voir sur la page d'accueil est en quelque sorte une manière de généralisation que je préfère :
 
-> a **_Minimalist_**,
+> un **_Minimaliste_**,
 >
-> a **_Sustainability_** advocate,
+> un défenseur de la **_Durabilité_**,
 >
-> and a Amateur **_programmer_**
+> et un **_programmeur_** amateur
 
-I think these three tags summarise, to a very limited extent, my personality, my fields of interest and my life objectives. Nevertheless, feel free to read through my articles to have a subtle understanding of this human.
+Je pense que ces trois tags résument, dans une mesure très limitée, ma personnalité, mes domaines d'intérêt et mes objectifs de vie. Néanmoins, n'hésitez pas à lire mes articles pour avoir une compréhension subtile de cet humain.
 
-**What am I up to recently**
+**Ce que je fais actuellement**
 
-- Learning Italian (just finished a beginner course)
-- Messing around my cloud server (this site as the fruit of this effort)
-- Training myself to be able to sign up for a half-marathon next year
+- Apprendre l'italien (je viens de terminer un cours pour débutants)
+- Bidouiller mon serveur cloud (ce site est le fruit de cet effort)
+- M'entraîner pour être capable de m'inscrire à un semi-marathon l'année prochaine
 
-## The site
+## Le site
 
-This site serves for both presenting myself and sharing my thoughts and experience. I expect that visitors might have a culturally and linguistically diverse background, so I would not limit to writing in a certain language; but the information would probably be most accessible in English. (I wish I could write an article sooner or later.)
+Ce site sert à la fois à me présenter et à partager mes pensées et expériences. Je m'attends à ce que les visiteurs aient un arrière-plan culturel et linguistique diversifié, donc je ne me limiterai pas à écrire dans une certaine langue ; mais les informations seront probablement plus accessibles en anglais. (J'espère pouvoir écrire un article tôt ou tard.)
 
-There won't be any major themes for the site, but I expect them to be following:
+Il n'y aura pas de thèmes majeurs pour le site, mais je m'attends à ce qu'ils soient les suivants :
 
-- Reflections on life and other meaningless stuff
-- Technical sharing
-- Thoughts on certain events
+- Réflexions sur la vie et autres futilités
+- Partage technique
+- Pensées sur certains événements
 
-As of October 2023, the site is built from scratch with [Astro](https://astro.build/) and hosted on Cloudflare Pages.
+En date d'octobre 2023, le site est construit de zéro avec [Astro](https://astro.build/) et hébergé sur Cloudflare Pages.
 
-## License
+## Licence
 
-_[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)_ unless otherwise suggested.
+_[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)_ sauf indication contraire.

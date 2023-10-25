@@ -1,15 +1,19 @@
 ---
 layout: '@layouts/Base.astro'
-title: 'About'
+title: '关于'
 ---
 
-# About Me
+import TranslatedBanner from '@components/TranslatedBanner.astro'
 
-Hi, stranger. A genuine welcome to this Internet shelter.
+<TranslatedBanner />
 
-## The human
+# 关于
 
-Below you may find a mechanical version of me:
+嗨，陌生人。真心欢迎来到这个数字避难所。
+
+## 这个人
+
+在下面你可能会找到一个机械化的版本的我：
 
 ```python
 class thisHuman():
@@ -17,8 +21,7 @@ class thisHuman():
         self.name = 'Yunan Wang'
         self.location = 'Paris, France'
         self.occupation = 'master student'
-        self.organisation = 'Université Paris 1 Panthéon Sorbonne'
-        self.field = 'Development Studies'
+        self.field = 'Sustainability'
         self.languages = {
             '普通话': 'native',
             'English': 'professional',
@@ -28,36 +31,36 @@ class thisHuman():
         }
 ```
 
-However, I prefer a more "organic" interpretation of me, even though it is simplistic to summarise an individuals by a set of tags or adjectives.
+然而，我更喜欢一个更“有机”的解释，即使用一组标签或形容词简化地概括一个人是过于简单的。
 
-The self introduction you might first see on the home page is somewhat a way of generalisation that I prefer:
+你可能首先在首页上看到的自我介绍其实是我更倾向于的一种概括方式：
 
-> a **_Minimalist_**,
+> 一个**_极简主义者_**，
 >
-> a **_Sustainability_** advocate,
+> 一个**_可持续发展_**的倡导者，
 >
-> and a Amateur **_programmer_**
+> 以及一个业余的**_程序员_**
 
-I think these three tags summarise, to a very limited extent, my personality, my fields of interest and my life objectives. Nevertheless, feel free to read through my articles to have a subtle understanding of this human.
+我认为这三个标签在很有限的程度上概括了我的个性，兴趣领域和人生目标。然而，请随意阅读我的文章，以对这个人有更微妙的理解。
 
-**What am I up to recently**
+**我最近在做什么**
 
-- Learning Italian (just finished a beginner course)
-- Messing around my cloud server (this site as the fruit of this effort)
-- Training myself to be able to sign up for a half-marathon next year
+- 学习意大利语（刚刚完成了一个初级课程）
+- 摆弄我的云服务器（这个网站就是这个努力的成果）
+- 训练自己，以便明年能报名参加半程马拉松
 
-## The site
+## 这个网站
 
-This site serves for both presenting myself and sharing my thoughts and experience. I expect that visitors might have a culturally and linguistically diverse background, so I would not limit to writing in a certain language; but the information would probably be most accessible in English. (I wish I could write an article sooner or later.)
+这个网站既用于介绍我自己，也用于分享我的想法和经验。我预计访客可能有文化和语言多样的背景，所以我不会限制用某种语言写作；但信息可能最容易用英语获取。（我希望能早点写一篇文章。）
 
-There won't be any major themes for the site, but I expect them to be following:
+网站不会有任何主要主题，但我预计它们将如下：
 
-- Reflections on life and other meaningless stuff
-- Technical sharing
-- Thoughts on certain events
+- 对生活和其他无意义事物的反思
+- 技术分享
+- 对某些事件的看法
 
-As of October 2023, the site is built from scratch with [Astro](https://astro.build/) and hosted on Cloudflare Pages.
+截至 2023 年 10 月，该网站是用[Astro](https://astro.build/)从零开始构建的，并托管在 Cloudflare Pages 上。
 
-## License
+## 许可
 
-_[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)_ unless otherwise suggested.
+除非另有说明，否则为*[CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)*。
