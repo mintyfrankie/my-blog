@@ -6,12 +6,15 @@ import { ViewTransitions } from 'astro:transitions'
 import NavBar from '@components/NavBar.astro'
 import Footer from '@components/Footer.astro'
 
+import { getLangFromUrl } from '@i18n/utils'
+
 const { title } = Astro.props
 const { frontmatter } = Astro.props
+const lang = getLangFromUrl(Astro.url)
 const pageTitle = title ?? frontmatter.title ?? 'Untitled'
 ---
 
-<html lang='en'>
+<html lang={lang}>
   <head>
     <meta charset='utf-8' />
     <meta name='viewport' content='width=device-width' />
