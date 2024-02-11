@@ -20,7 +20,7 @@ const page = Astro.props;
 const { Content } = await page.render();
 ---
 
-<Base title={`${config.siteTitle} | ${page.data.title}`}>
+<Base title={`${page.data.title} | ${config.siteTitle}`}>
   {page.data.isTranslated && <TranslatedBanner />}
   <h1>{page.data.title}</h1>
   <div class="italic text-accent-600 my-2">
