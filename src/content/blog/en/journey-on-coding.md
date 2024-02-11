@@ -1,12 +1,11 @@
 ---
 title: journey-on-coding
-isDraft: false
+isPublishable: true
 description: My interests in coding, in computers, and in gadgets.
 date: 2024-02-07
 lang: en
 tags:
   - computer
-isPublishable: true
 ---
 
 Recently I finished an excellent course called "[Crash Course Computer Science](https://www.youtube.com/watch?v=O5nskjZ_GoI)". Nothing fancy, just some general introduction to the history of all the foundations that constitute our contemporary landscape today: computers, Internet, robots. 
