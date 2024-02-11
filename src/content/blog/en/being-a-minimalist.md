@@ -1,6 +1,6 @@
 ---
-title: being-a-minimalist
-isDraft: false
+title: Being a Minimalist
+slug: being-a-minimalist
 description: A sticky note about my thoughts on what being a minimalist means.
 date: 2023-03-08
 lang: en
