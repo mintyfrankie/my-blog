@@ -1,52 +1,58 @@
 ---
-import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import { getLangFromUrl, useTranslations } from "@i18n/utils";
 
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <link
-  rel='stylesheet'
-  href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'
-  integrity='sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=='
-  crossorigin='anonymous'
-  referrerpolicy='no-referrer'
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
 />
 
 <nav
-  class='flex flex-col items-center space-y-4 md:space-y-0 md:flex-row md:justify-between my-8 mb-4 pb-2 border-b-2 border-accent-600'>
-  <a class='text-xl font-black on-hover' href=`/${lang}`>{t('title')}</a>
-  <ul class='flex flex-row space-x-8 md:space-x-4 items-center'>
+  class="flex flex-col items-center space-y-4 md:space-y-0 md:flex-row md:justify-between my-8 mb-4 pb-2 border-b-2 border-accent-600"
+>
+  <a class="text-xl font-black on-hover" href=`/${lang}`>{t("title")}</a>
+  <ul class="flex flex-row space-x-8 md:space-x-4 items-center">
     <li>
-      <a href=`/${lang}/about` class='on-hover'
-        ><i class='fa-solid fa-circle-info'></i></a
+      <a href=`/${lang}/about` class="on-hover"
+        ><i class="fa-solid fa-circle-info"></i></a
       >
     </li>
     <li>
-      <a href='https://github.com/mintyfrankie' class='on-hover'
-        ><i class='fa-brands fa-square-github'></i></a
+      <a href="https://github.com/mintyfrankie" class="on-hover"
+        ><i class="fa-brands fa-square-github"></i></a
       >
     </li>
     <li>
-      <a href='/rss.xml' class='on-hover'
-        ><i class='fa-solid fa-square-rss'></i></a
+      <a href="https://www.linkedin.com/in/yunanwg/" class="on-hover"
+        ><i class="fa-brands fa-linkedin"></i></a
       >
+      <li>
+        <a href="/rss.xml" class="on-hover"
+          ><i class="fa-solid fa-square-rss"></i></a
+        >
+      </li>
     </li>
   </ul>
+
+  <style>
+    .on-hover {
+      @apply p-0.5;
+      @apply no-underline;
+    }
+
+    .on-hover:hover {
+      @apply bg-accent-200;
+    }
+
+    li::before {
+      content: "";
+      @apply mr-0;
+    }
+  </style>
 </nav>
-
-<style>
-  .on-hover {
-    @apply p-0.5;
-    @apply no-underline;
-  }
-
-  .on-hover:hover {
-    @apply bg-accent-200;
-  }
-
-  li::before {
-    content: '';
-    @apply mr-0;
-  }
-</style>
