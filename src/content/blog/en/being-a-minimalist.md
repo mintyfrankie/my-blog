@@ -6,7 +6,7 @@ date: 2023-03-08
 lang: en
 tags:
   - minimalism
-share: true
+isPublishable: true
 ---
 
 Sitting right in front of my monitor, I am writing down this very first blog article. Why _Being a minimalist_? Because I found it interesting but also necessary to explain the headlines I have given to me.
