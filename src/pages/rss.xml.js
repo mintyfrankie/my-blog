@@ -13,7 +13,7 @@ export async function GET(context) {
     site: context.site,
     items: posts.filter((entry) => entry.data.lang === "en").map((entry) => ({
       title: entry.data.title,
-      link: `/posts/${entry.slug}`,
+      link: `/en/posts/${entry.slug.split("/")[1]}`,
       pubDate: entry.data.date,
       description: entry.data.description,
       content: sanitizeHtml(parser.render(entry.body)),
