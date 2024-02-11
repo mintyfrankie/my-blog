@@ -4,8 +4,9 @@ const blogCollection = defineCollection({
   type: 'content',
   schema: z.object({
     title: z.string(),
-    description: z.string(),
+    slug: z.string(),
     isPublishable: z.boolean().default(false),
+    description: z.string(),
     isTranslated: z.boolean().default(false),
     lang: z.enum(['en', 'fr', 'zh']),
     tags: z.array(z.string()).optional(),
