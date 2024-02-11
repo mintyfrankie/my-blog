@@ -1,8 +1,8 @@
 import rss from '@astrojs/rss'
 import { getCollection } from 'astro:content'
-import { config } from 'site.config'
-import sanitizeHtml from 'sanitize-html'
 import MarkdownIt from 'markdown-it'
+import sanitizeHtml from 'sanitize-html'
+import { config } from 'site.config'
 const parser = new MarkdownIt()
 
 export async function GET(context) {
@@ -11,7 +11,7 @@ export async function GET(context) {
     title: config.siteTitle,
     description: config.siteDescription,
     site: context.site,
-    items: posts.map((entry) => ({
+    items: posts.filter((entry) => entry.data.lang === "en").map((entry) => ({
       title: entry.data.title,
       link: `/posts/${entry.slug}`,
       pubDate: entry.data.date,
