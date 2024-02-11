@@ -1,6 +1,6 @@
 export const config = {
-  siteTitle: 'Wanderlust',
-  siteTitleZh: 'Wanderlust',
-  siteDescription: 'A digital shelter for my thoughts and ideas.',
-  siteDescriptionZh: '一个未知的数字避难所',
+  siteTitle: 'MintyGarden',
+  siteTitleZh: 'MintyGarden',
+  siteDescription: 'A digitalised version of my thoughts.',
+  siteDescriptionZh: '一些数字化的我的想法。',
 }
