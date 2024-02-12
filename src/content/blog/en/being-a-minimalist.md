@@ -2,7 +2,7 @@
 title: Being a Minimalist
 filename: being-a-minimalist
 description: A sticky note about my thoughts on what being a minimalist means.
-date: 2023-03-08
+date: 2023-11-08
 lang: en
 tags:
   - minimalism
