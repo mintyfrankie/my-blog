@@ -5,7 +5,7 @@
 /* global font */
 @layer base {
   html {
-    font-family: 'Roboto Mono Variable', system-ui, sans-serif;
+    font-family: system-ui, sans-serif;
     background-color: #f7fafc;
   }
 }
