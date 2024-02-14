@@ -3,7 +3,7 @@ title: Journey on "Coding"
 filename: journey-on-coding
 isPublishable: true
 description: My interests in coding, in computers, and in gadgets.
-date: 2024-02-07
+date: 2023-12-07
 lang: en
 tags:
   - computer
