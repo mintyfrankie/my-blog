@@ -29,7 +29,7 @@ const pageTitle = title ?? frontmatter.title ?? "Untitled";
     <ViewTransitions />
     <title>{pageTitle}</title>
   </head>
-  <body class="mx-8 md:mx-48 xl:mx-72">
+  <body class="mx-8 md:max-w-prose md:mx-auto">
     <NavBar />
     <div class="min-h-screen">
       <slot />
